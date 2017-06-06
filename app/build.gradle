@@ -31,7 +31,14 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:24.2.1'
+    //compile 'com.android.support:appcompat-v7:24.2.1'
+
+    compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
+    compile 'com.android.support:design:26.0.0-alpha1'
+    compile 'com.android.support:cardview-v7:26.0.0-alpha1'
+
+
+
     testCompile 'junit:junit:4.12'
     apt 'com.jakewharton:butterknife-compiler:8.0.1'
     compile 'com.jakewharton:butterknife:8.0.1'
@@ -39,14 +46,14 @@ dependencies {
     compile 'com.squareup.picasso:picasso:2.3.2'
     compile 'com.nineoldandroids:library:2.4.0'
     compile 'com.daimajia.slider:library:1.1.5@aar'
-    compile 'com.android.support:cardview-v7:24.2.1'
+    //compile 'com.android.support:cardview-v7:24.2.1'
     compile 'com.android.support:recyclerview-v7:24.2.1'
     compile 'com.squareup.okhttp3:okhttp:3.6.0'
     compile 'com.google.code.gson:gson:2.8.0'
     compile 'com.github.d-max:spots-dialog:0.4@aar'
     compile 'com.facebook.fresco:fresco:0.12.0'
     compile 'com.cjj.materialrefeshlayout:library:1.3.0'
-    compile 'com.android.support:design:24.2.1'
+    //compile 'com.android.support:design:24.2.1'
     compile 'de.hdodenhof:circleimageview:2.0.0'
     compile project(':sharesdk')
     compile files('libs/MobCommons-2017.0321.1624.jar')
@@ -66,7 +73,7 @@ dependencies {
     //使用QQ钱包时添加
     compile project(':bdwallet_pay_sdk')
 
-    compile 'com.contrarywind:Android-PickerView:3.2.5'
+    compile ('com.contrarywind:Android-PickerView:3.2.5'){exclude group: 'com.android.support'}
 
-    compile 'com.w4lle.library:NineLayout:1.0.0'
+    compile ('com.w4lle.library:NineLayout:1.0.0'){exclude group: 'com.android.support'}
 }
